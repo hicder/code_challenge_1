@@ -3,8 +3,6 @@
 #include <folly/dynamic.h>
 #include <folly/json.h>
 
-#include <iostream>
-
 namespace mongo {
 
 namespace {
