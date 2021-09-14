@@ -48,13 +48,6 @@ void flattenJson(const folly::dynamic &obj, std::string prefix,
 }
 } // namespace
 
-/**
- * Flatten the JSON string.
- *
- * @param input JSON string input.
- * @return flattened JSON string.
- * @throws std::invalid_argument If the input is malformed in some way.
- */
 std::string flattenJson(std::string input) {
   try {
     folly::dynamic json = folly::parseJson(input);
