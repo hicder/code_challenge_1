@@ -1,0 +1,12 @@
+{
+    "name": "Hieu",
+    "location": {
+        "city": "Hayward",
+        "state": "CA"
+    },
+    "skills": {
+        "cpp": true,
+        "java": true,
+        "css": false
+    }
+}
