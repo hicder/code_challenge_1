@@ -32,7 +32,7 @@ void flattenJson(const folly::dynamic &obj, std::string prefix,
     case folly::dynamic::INT64:
       FOLLY_FALLTHROUGH;
     case folly::dynamic::STRING:
-      (*out)[prefix + key.asString()] = kv.second;
+      (*out)[folly::to<std::string>(prefix, key.asString())] = kv.second;
       break;
     case folly::dynamic::OBJECT:
       flattenJson(kv.second,
